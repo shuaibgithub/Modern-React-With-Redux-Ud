@@ -3,12 +3,17 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 
+function getTime() {
+    return (new Date()).toLocaleTimeString()
+}
+
 // function getButtonText() {
 //     return 'Click on me!'
 // }
 
 // Create a react component
 const App = function() {
+    
     // const buttonText = 12345 or ['Hi', 'There'] or [10, 20]
     // const buttonText = 'Click Me!'
     // const style={backgroundColor: 'blue', color: 'white' }
@@ -16,6 +21,14 @@ const App = function() {
     const labelText = 'Enter name:'
     return (  
     <div>
+
+            <div>
+                <div>Current Time:</div>
+                 {/* <h3>12:05 PM</h3> */}
+                 <h3>{getTime()}</h3>
+                
+            </div>
+
         {/* instead of class */}
         {/* htmlFor instead of for */}
         <label className="label" htmlFor="name"> 
