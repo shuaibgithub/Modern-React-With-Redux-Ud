@@ -17,7 +17,8 @@ const App = function() {
     return (  
     <div>
         {/* instead of class */}
-        <label className="label" for="name"> 
+        {/* htmlFor instead of for */}
+        <label className="label" htmlFor="name"> 
             {/* Enter name: */}
             {labelText}
         </label>
